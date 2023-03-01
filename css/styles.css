@@ -7,6 +7,7 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+
 /* typography */
 /* mobile */
 html {
@@ -30,6 +31,7 @@ h1 {
 h2 {
   font-size: 4rem;
 }
+
 h3 {
   font-size: 3rem;
 }
@@ -49,5 +51,32 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+/* links */
+/* mobile */
+a {
+  text-decoration: none;
+}
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  color: tomato;
+  line-height: 1.5;
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: 0.15s;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+/* desktop */
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
