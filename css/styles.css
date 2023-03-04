@@ -274,14 +274,14 @@ a {
 }
 /* plans */
 /* desktop */
-.paln__name {
+.plan__name {
   color: #fff;
   font-size: 2.4rem;
   font-weight: 500;
   margin: 0;
 }
 .plan__price {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 .plan__billing-cycle {
   font-size: 2rem;
@@ -294,4 +294,22 @@ a {
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1px;
+}
+/* desktop */
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+  .plan__description {
+    font-size: 1.7rem;
+  }
+  .plan .list--tick .list__item {
+    font-size: 1.8rem;
+  }
 }
