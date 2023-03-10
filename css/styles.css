@@ -111,6 +111,10 @@ a {
   background: #02cdf1;
   padding: 0.5rem 1.5rem;
 }
+.card--primary .badge--primary {
+  background: #126de4;
+  padding: 0.5rem 1.5rem;
+}
 .badge--small {
   font-size: 1.6rem;
 }
@@ -650,5 +654,25 @@ a {
 @media screen and (min-width: 1024px) {
   .block-domain .badge {
     font-size: 2rem;
+  }
+}
+/* plans block */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+.block-plans .plan {
+  transition: all 0.2s ease-in-out;
+}
+.block-plans .card {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.block-plans .plan:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1024px) {
+  .plan--popular {
+    transform: scale(1.05);
   }
 }
