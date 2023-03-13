@@ -196,7 +196,7 @@ a {
   font-weight: 600;
   outline: none;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -449,6 +449,14 @@ a {
 .testimonial__image {
   position: relative;
 }
+@media screen and (max-width: 374px) {
+  .card.testimonial {
+    padding: 0;
+  }
+  .testimonial__image > .icon-container {
+    display: none;
+  }
+}
 /* tablet */
 @media screen and (min-width: 768px) {
   .testimon.quote__author,
@@ -468,6 +476,10 @@ a {
   padding: 4rem;
   border-radius: 5px;
 }
+.callout-signup {
+  transform: translateY(5rem);
+}
+
 .callout__content {
   text-align: center;
 }
@@ -484,6 +496,11 @@ a {
   justify-self: center;
   align-self: center;
   margin: 0 2rem;
+}
+@media screen and (max-width: 374px) {
+  .callout-signup {
+    padding: 1rem 0.2rem;
+  }
 }
 /* tablet */
 @media screen and (min-width: 768px) {
@@ -539,6 +556,7 @@ a {
 .block .block__heading {
   margin-top: 0;
 }
+
 .block--dark h1,
 .block--dark h2,
 .block--dark h3 {
@@ -555,6 +573,11 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+@media screen and (max-width: 374px) {
+  .container {
+    margin: 0;
+  }
 }
 /* navigation bar */
 .nav {
@@ -644,8 +667,9 @@ a {
   max-width: 700px;
 }
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
